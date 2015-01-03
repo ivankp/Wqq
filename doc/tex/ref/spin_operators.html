@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0062)file:///home/ivanp/Desktop/EasySpin%20%20Spin%20operators.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   
+   <link rel="shortcut icon" href="http://www.easyspin.org/documentation/favicon.ico">
+   <link rel="stylesheet" type="text/css" href="./spin_operators_files/style.css">
+   <title>EasySpin: Spin operators</title>
+<style type="text/css"></style></head>
+
+<body>
+
+<h1>Spin operators and matrices</h1>
+
+<div class="subtitle">Spin operators</div>
+
+<p>
+Spin vectors are usually represented in terms of their Hermitian cartesian
+component operators
+</p>
+
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators1.png" alt="[eqn]"><!--MATH
+$$
+\opvc{S}
+=
+\begin{pmatrix}
+\Op{S}_\mr{x}\\
+\Op{S}_\mr{y}\\
+\Op{S}_\mr{x}
+\end{pmatrix}
+$$
+-->
+</div>
+
+<p>
+Sometimes, the non-Hermitian ladder operators
+</p>
+
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators2.png" alt="[eqn]"><!--MATH
+$$
+\Op{S}_+ = \Op{S}_\mr{x} + \mr{i}\Op{S}_\mr{y}
+\qquad
+\Op{S}_- = \Op{S}_\mr{x} - \mr{i}\Op{S}_\mr{y}
+$$
+-->
+</div>
+<p>
+are used. The cartesian operators are then given
+by
+</p><p>
+
+</p><div class="eqn">
+<img src="./spin_operators_files/spinoperators3.png" alt="[eqn]"><!--MATH
+$$
+\Op{S}_\mr{x} = \frac{1}{2}\left(\Op{S}_+ + \Op{S}_-\right)
+\qquad
+\Op{S}_\mr{y} = \frac{1}{2\mr{i}}\left(\Op{S}_+ - \Op{S}_-\right)
+$$
+-->
+</div>
+
+
+<p>
+Some common commutators are
+</p>
+
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators4.png" alt="[eqn]"><!--MATH
+$$
+\left[ \Op{S}_\mr{x}, \Op{S}_\mr{y} \right]
+=
+\mr{i}\Op{S}_\mr{z}
+\qquad
+\left[ \Op{S}_\mr{y}, \Op{S}_\mr{z} \right]
+=
+\mr{i}\Op{S}_\mr{x}
+\qquad
+\left[ \Op{S}_\mr{z}, \Op{S}_\mr{x} \right]
+=
+\mr{i}\Op{S}_\mr{y}
+$$
+-->
+</div>
+
+<p>
+and
+</p>
+
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators5.png" alt="[eqn]"><!--MATH
+$$
+\left[ \Op{S}_\mr{z}, \Op{S}_+ \right]
+=
+\Op{S}_+
+\qquad
+\left[ \Op{S}_\mr{z}, \Op{S}_- \right]
+=
+-\Op{S}_-
+\qquad
+\left[ \Op{S}_+, \Op{S}_- \right]
+=
+2\Op{S}_\mr{z}
+$$
+-->
+</div>
+
+<div class="subtitle">Spin matrices - General</div>
+
+<p>
+For a spin S the cartesian and ladder operators are square matrices of
+dimension 2S+1. They are always represented in the Zeeman basis with
+states <img src="./spin_operators_files/spinoperators6.png" alt="[eqn]"><!--MATH$|S,m\rangle$-->
+ (m=-S,...,S), in short <img src="./spin_operators_files/spinoperators7.png" alt="[eqn]"><!--MATH$|m\rangle$-->,
+that satisfy
+</p>
+
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators8.png" alt="[eqn]"><!--MATH
+\begin{eqnarray}
+\langle m' | \Op{S}_\mr{x} | m\rangle &=&
+(\delta_{m',m+1}+\delta_{m'+1,m})
+\frac{1}{2}\sqrt{S(S+1)-m'm}\nonumber\\
+\langle m' | \Op{S}_\mr{y} | m\rangle &=&
+(\delta_{m',m+1}-\delta_{m'+1,m})
+\frac{1}{2\mr{i}}\sqrt{S(S+1)-m'm}\nonumber\\
+\langle m' | \Op{S}_\mr{z} | m\rangle &=&
+\delta_{m',m}m\nonumber\\
+\langle m' | \Op{S}_\mr{+} | m\rangle &=&
+\delta_{m',m+1}
+\sqrt{S(S+1)-m'm}\nonumber\\
+\langle m' | \Op{S}_\mr{-} | m\rangle &=&
+\delta_{m'+1,m}
+\sqrt{S(S+1)-m'm}\nonumber\\
+\langle m' | \opvc{S}^2 | m\rangle &=&
+\delta_{m',m}S(S+1)\nonumber
+\end{eqnarray}
+-->
+</div>
+
+<div class="subtitle">Spin matrices - Explicit matrices</div>
+
+<p>
+For S=1/2
+</p>
+
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators9.png" alt="[eqn]"><!--MATH
+$$
+S_\mr{x} = 
+\frac{1}{2}
+\begin{pmatrix}
+0 & 1\\
+1 & 0
+\end{pmatrix}
+\qquad
+S_\mr{y} = 
+\frac{1}{2\mr{i}}
+\begin{pmatrix}
+0 & 1\\
+-1 & 0
+\end{pmatrix}
+\qquad
+S_\mr{z} = 
+\frac{1}{2}
+\begin{pmatrix}
+1 & 0\\
+0 & -1
+\end{pmatrix}
+$$
+-->
+</div>
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators10.png" alt="[eqn]"><!--MATH
+$$
+S_\mr{+} = 
+\begin{pmatrix}
+0 & 1\\
+0 & 0
+\end{pmatrix}
+\qquad
+S_\mr{-} = 
+\begin{pmatrix}
+0 & 0\\
+1 & 0
+\end{pmatrix}
+$$
+-->
+</div>
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators11.png" alt="[eqn]"><!--MATH
+$$
+S_\mr{\alpha} = 
+\begin{pmatrix}
+1 & 0\\
+0 & 0
+\end{pmatrix}
+\qquad
+S_\mr{\beta} = 
+\begin{pmatrix}
+0 & 0\\
+0 & 1
+\end{pmatrix}
+$$
+-->
+</div>
+
+<p>
+The <img src="./spin_operators_files/spinoperators12.png" alt="[eqn]"><!--MATH$|+1/2\rangle$--> state is commonly denoted as 
+<img src="./spin_operators_files/spinoperators13.png" alt="[eqn]"><!--MATH$\alpha$-->,
+the <img src="./spin_operators_files/spinoperators14.png" alt="[eqn]"><!--MATH$|-1/2\rangle$--> state as
+<img src="./spin_operators_files/spinoperators15.png" alt="[eqn]"><!--MATH$\beta$-->.
+
+</p><p>
+For S=1
+</p>
+
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators16.png" alt="[eqn]"><!--MATH
+$$
+S_\mr{x} = 
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+0 & 1 & 0\\
+1 & 0 & 1\\
+0 & 1 & 0
+\end{pmatrix}
+\qquad
+S_\mr{y} = 
+\frac{1}{\sqrt{2}\mr{i}}
+\begin{pmatrix}
+0 & 1 & 0\\
+-1 & 0 & 1\\
+0 & -1 & 0
+\end{pmatrix}
+\qquad
+S_\mr{z} = 
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 0 & 0\\
+0 & 0 &-1
+\end{pmatrix}
+$$
+-->
+</div>
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators17.png" alt="[eqn]"><!--MATH
+$$
+S_\mr{+} = 
+\sqrt{2}
+\begin{pmatrix}
+0 & 1 & 0\\
+0 & 0 & 1\\
+0 & 0 & 0
+\end{pmatrix}
+\qquad
+S_\mr{-} = 
+\begin{pmatrix}
+0 & 0 & 0\\
+1 & 0 & 0\\
+0 & 1 & 0
+\end{pmatrix}
+$$
+-->
+</div>
+
+<p>
+For S=3/2
+</p>
+
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators18.png" alt="[eqn]"><!--MATH
+$$
+S_\mr{x} = 
+\frac{1}{2}
+\begin{pmatrix}
+0 & \sqrt{3} & 0 & 0\\
+\sqrt{3} & 0 & 2 & 0\\
+0 & 2 & 0 & \sqrt{3}\\
+0 & 0 & \sqrt{3} & 0
+\end{pmatrix}
+\qquad
+S_\mr{y} = 
+\frac{1}{2\mr{i}}
+\begin{pmatrix}
+0 & \sqrt{3} & 0 & 0\\
+-\sqrt{3} & 0 & 2 & 0\\
+0 & -2 & 0 & \sqrt{3}\\
+0 & 0 & -\sqrt{3} & 0
+\end{pmatrix}
+$$
+-->
+</div>
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators19.png" alt="[eqn]"><!--MATH
+$$
+S_\mr{z} = 
+\begin{pmatrix}
+3/2 & 0 & 0 & 0\\
+0 & 1/2 & 0 & 0\\
+0 & 0 & -1/2 & 0 \\
+0 & 0 & 0 & -3/2
+\end{pmatrix}
+$$
+-->
+</div>
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators20.png" alt="[eqn]"><!--MATH
+$$
+S_\mr{+} = 
+\begin{pmatrix}
+0 & \sqrt{3} & 0 & 0\\
+0 & 0 & 2 & 0\\
+0 & 0 & 0 & \sqrt{3}\\
+0 & 0 & 0 & 0
+\end{pmatrix}
+\qquad
+S_\mr{-} = 
+\begin{pmatrix}
+0 & 0 & 0 & 0\\
+\sqrt{3} & 0 & 0 & 0\\
+0 & 2 & 0 & 0\\
+0 & 0 & \sqrt{3} & 0
+\end{pmatrix}
+$$
+-->
+</div>
+
+
+<p>
+For S=2
+</p>
+
+
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators21.png" alt="[eqn]"><!--MATH
+$$
+S_\mr{x} = 
+\frac{1}{2}
+\begin{pmatrix}
+0 & 2 & 0 & 0 & 0\\
+2 & 0 & \sqrt{6} & 0 & 0\\
+0 & \sqrt{6} & 0 & \sqrt{6} & 0\\
+0 & 0 & \sqrt{6} & 0 & 2\\
+0 & 0 & 0 & 2 & 0
+\end{pmatrix}
+\qquad
+S_\mr{y} = 
+\frac{1}{2\mr{i}}
+\begin{pmatrix}
+0 & 2 & 0 & 0 & 0\\
+-2 & 0 & \sqrt{6} & 0 & 0\\
+0 & -\sqrt{6} & 0 & \sqrt{6} & 0\\
+0 & 0 & -\sqrt{6} & 0 & 2\\
+0 & 0 & 0 & -2 & 0
+\end{pmatrix}
+$$
+-->
+</div>
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators22.png" alt="[eqn]"><!--MATH
+$$
+S_\mr{z} = 
+\begin{pmatrix}
+2 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 &-1 & 0\\
+0 & 0 & 0 & 0 &-2
+\end{pmatrix}
+$$
+-->
+</div>
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators23.png" alt="[eqn]"><!--MATH
+$$
+S_\mr{+} = 
+\begin{pmatrix}
+0 & 2 & 0 & 0 & 0\\
+0 & 0 & \sqrt{6} & 0 & 0\\
+0 & 0 & 0 & \sqrt{6} & 0\\
+0 & 0 & 0 & 0 & 2\\
+0 & 0 & 0 & 0 & 0
+\end{pmatrix}
+\qquad
+S_\mr{-} = 
+\begin{pmatrix}
+0 & 0 & 0 & 0 & 0\\
+2 & 0 & 0 & 0 & 0\\
+0 & \sqrt{6} & 0 & 0 & 0\\
+0 & 0 & \sqrt{6} & 0 & 0\\
+0 & 0 & 0 & 2 & 0
+\end{pmatrix}
+$$
+-->
+</div>
+
+
+<p>
+For S=5/2
+</p>
+
+
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators24.png" alt="[eqn]"><!--MATH
+$$
+S_\mr{x} = 
+\frac{1}{2}
+\begin{pmatrix}
+0 & \sqrt{5} & 0 & 0 & 0 & 0\\
+\sqrt{5} & 0 & \sqrt{8} & 0 & 0 & 0\\
+0 & \sqrt{8} & 0 & \sqrt{9} & 0 & 0\\
+0 & 0 & \sqrt{9} & 0 & \sqrt{8} & 0\\
+0 & 0 & 0 & \sqrt{8} & 0 & \sqrt{5}\\
+0 & 0 & 0 & 0 & \sqrt{5} & 0
+\end{pmatrix}
+\qquad
+S_\mr{y} = 
+\frac{1}{2\mr{i}}
+\begin{pmatrix}
+0 & \sqrt{5} & 0 & 0 & 0 & 0\\
+-\sqrt{5} & 0 & \sqrt{8} & 0 & 0 & 0\\
+0 & -\sqrt{8} & 0 & \sqrt{9} & 0 & 0\\
+0 & 0 & -\sqrt{9} & 0 & \sqrt{8} & 0\\
+0 & 0 & 0 & -\sqrt{8} & 0 & \sqrt{5}\\
+0 & 0 & 0 & 0 & -\sqrt{5} & 0
+\end{pmatrix}
+$$
+-->
+</div>
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators25.png" alt="[eqn]"><!--MATH
+$$
+S_\mr{z} = 
+\begin{pmatrix}
+5/2 & 0 & 0 & 0 & 0 & 0\\
+0 & 3/2 & 0 & 0 & 0 & 0\\
+0 & 0 & 1/2 & 0 & 0 & 0\\
+0 & 0 & 0 & -1/2& 0 & 0\\
+0 & 0 & 0 & 0 & -3/2& 0\\
+0 & 0 & 0 & 0 & 0 &-5/2
+\end{pmatrix}
+$$
+-->
+</div>
+<div class="eqn">
+<img src="./spin_operators_files/spinoperators26.png" alt="[eqn]"><!--MATH
+$$
+S_\mr{+} = 
+\begin{pmatrix}
+0 & \sqrt{5} & 0 & 0 & 0 & 0\\
+0 & 0 & \sqrt{8} & 0 & 0 & 0\\
+0 & 0 & 0 & \sqrt{9} & 0 & 0\\
+0 & 0 & 0 & 0 & \sqrt{8} & 0\\
+0 & 0 & 0 & 0 & 0 & \sqrt{5}\\
+0 & 0 & 0 & 0 & 0 & 0
+\end{pmatrix}
+\qquad
+S_\mr{-} = 
+\begin{pmatrix}
+0 & 0 & 0 & 0 & 0 & 0\\
+\sqrt{5} & 0 & 0 & 0 & 0 & 0\\
+0 & \sqrt{8} & 0 & 0 & 0 & 0\\
+0 & 0 & \sqrt{9} & 0 & 0 & 0\\
+0 & 0 & 0 & \sqrt{8} & 0 & 0\\
+0 & 0 & 0 & 0 & \sqrt{5} & 0
+\end{pmatrix}
+$$
+-->
+</div>
+
+
+<hr>
+
+
+
+</body></html>

@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage{note}
+
+\title{Vector boson decay quarks energy difference}
+\author{Ivan Pogrebnyak}
+\date{\today}
+
+\def\tilt{\theta_{\mathrm{tilt}}}
+
+\begin{document}
+\maketitle
+
+By \eq{19} in the opening angle derivation,
+\begin{equation}\label{eq:19}
+  E_q = \frac{E_W}{2} (1 \pm \beta\cos\tilt). \tag{19}
+\end{equation}
+Therefore,
+\begin{equation}
+  \Delta E_q = \frac{E_W}{2} (1 + \beta\cos\tilt - 1 + \beta\cos\tilt)
+  = E_W\beta\cos\tilt.
+\end{equation}
+But $\beta = p_W/E_W$, so
+\begin{equation}
+  \boxed{
+    \frac{\Delta E_q}{p_W} = \cos\tilt
+  }\ .
+\end{equation}
+
+\end{document}

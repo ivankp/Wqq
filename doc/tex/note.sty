@@ -1,0 +1,81 @@
+\ProvidesPackage{note}
+
+\usepackage[cm]{fullpage}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{array}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, citecolor=black, urlcolor=blue}
+%\setcounter{secnumdepth}{-1}
+
+\makeatletter
+
+\def\maketitle{%
+\par\noindent\textbf{\@title}\hfill\@author,\ \@date%
+\vspace{-2mm}%
+\par\noindent\rule{\linewidth}{0.4pt}%
+%\par\hrulefill
+\par}
+
+\makeatother
+
+%\numberwithin{equation}{section}
+%\numberwithin{figure}{section}
+
+\newcommand{\eq}[1]{\hyperref[eq:#1]{Eq.~(\ref{eq:#1})}}
+\newcommand{\fig}[1]{\hyperref[fig:#1]{Fig.~\ref{fig:#1}}}
+\newcommand{\tab}[1]{\hyperref[table:#1]{Table~\ref{table:#1}}}
+\newcommand{\sect}[1]{\hyperref[sec:#1]{Section~\ref{sec:#1}}}
+\newcommand{\app}[1]{\hyperref[sec:#1]{Appendix~\ref{sec:#1}}}
+
+\DeclareMathOperator{\sech}{sech}
+
+\newcommand{\parder}[3][]{\frac{\partial^{#1} #2}{{\partial #3}^{#1}}}
+
+\newcommand{\bracket}[2]{\big<#1\big|#2\big>}
+\newcommand{\bra}[1]{\big<#1\big|}
+\newcommand{\ket}[1]{\big|#1\big>}
+
+\newcommand{\expval}[1]{\left<#1\right>}
+\newcommand{\inner}[2]{\left<#1,#2\right>}
+\newcommand{\norm}[1]{\left|#1\right|}
+  \newcommand{\normsq}[1]{\norm{#1}^2}
+\newcommand{\normm}[1]{\left|\left|#1\right|\right|}
+  \newcommand{\normmsq}[1]{\normm{#1}^2}
+\newcommand{\intinf}[2][x]{\int_{-\infty}^{\infty} \! #2 \, d#1}
+\newcommand{\intind}[2][x]{\int \! #2 \, d#1}
+\newcommand{\intbd}[4][x]{\int_{#2}^{#3} \! #4 \, d#1}
+\newcommand{\comm}[2]{\left[#1,#2\right]}
+\newcommand{\fourier}[1]{\mathfrak{F}\left\{#1\right\}}
+\newcommand{\mat}[1]{\textbf{\textsf{#1}}}
+
+\newcommand{\vect}[1]{\bm{\mathrm{#1}}}
+\newcommand{\tens}[1]{\bm{\mathsf{#1}}}
+\newcommand{\x}{\vect{\hat{x}}}
+\newcommand{\y}{\vect{\hat{y}}}
+\newcommand{\z}{\vect{\hat{z}}}
+\newcommand{\curl}[1]{\nabla\times\mathbf{#1}}
+\newcommand{\lap}[1][1]{\nabla^2\mathbf{#1}}
+
+\newcommand{\unit}[1]{\ \text{#1}}
+\newcommand{\eV}{\unit{eV}}
+\newcommand{\keV}{\unit{keV}}
+\newcommand{\MeV}{\unit{MeV}}
+\newcommand{\GeV}{\unit{GeV}}
+\newcommand{\nm}{\unit{nm}}
+
+\newcommand{\const}{\mathrm{const.}}
+
+\newcommand{\kd}[1]{\delta_{#1}}
+\newcommand{\lc}[1]{\epsilon_{#1}}
+
+\newcommand{\E}[1]{\times 10^{#1}}
+\newcommand{\half}[1][1]{\frac{#1}{2}}
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+\endinput

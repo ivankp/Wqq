@@ -1,0 +1,190 @@
+body {
+  color: black;
+  background-color: white;
+  margin: 0ex;
+  padding: 1em;
+  max-width: 800px;
+}
+
+h1 {
+  margin: 0ex;
+}
+
+:link {
+  color: #00c;
+  background: transparent;
+}
+:visited {
+  color: #00c;
+  background: transparent;
+}
+a:active {
+  color: #c00;
+  background: transparent;
+}
+a[href]:hover {
+  background: #ffa;
+}
+
+.doctocgroup {
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.doctoccategory {
+  font-weight:   bold;
+  margin-top: 3px;
+}
+
+.doctocentry {
+  margin-left: 20px;
+}
+
+div.subtitle {
+  color: black;
+  background-color: #d3d3d3;
+  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 14pt;
+  border: 0px solid #999999;
+  border-bottom: 1px solid #999999;
+  border-left: 0px solid #999999;
+  margin-top: 3ex;
+  padding: 0.1ex;
+  padding-left: 0ex;
+}
+
+div.subtitle2 {
+  color: black;
+  background-color: #ececec;
+  font-weight: bold;
+  border: 0px solid black;
+  margin-top: 3ex;
+  padding: 0.1ex;
+  padding-left: 0ex;
+}
+
+.mlcode {
+  color: #00008b;
+  font-family: monospace;
+}
+
+.param {
+  font-weight: bold;
+}
+
+.grouptitle {
+  color: #000000;
+  font-weight: bold;
+}
+
+body {
+  background-color: white;
+  padding: 1ex;
+}
+
+pre {
+  padding: 1ex;
+  font-family: monospace;
+  margin-left: 3ex;
+  margin-right: 0ex;
+  border-style: 1px solid none;
+  overflow-x: auto;
+}
+
+pre.mlexample {
+  margin-left: 2em;
+  margin-right: 2em;
+  color: #777;
+  padding: 6px;
+  background-color: #fffff0;
+  border-width: 0px;
+  border-color: #000;
+}
+
+pre.mloutput {
+  margin-left: 2em;
+  margin-right: 2em;
+  color: #666;
+  font-style: italic;
+  background-color: transparent;
+  border-left: 0px solid #999;
+}
+
+pre.mlsyntax {
+  margin-left: 2em;
+  margin-right: 2em;
+  color: black;
+  background-color: #fffff0;
+  border-width: 0px;
+  border-color: #000;
+}
+
+.latex {
+  color: Red;
+  font-size: small;
+}
+
+table.head {
+  border: 0px;
+}
+
+table {
+  border-collapse: collapse;
+  border-color: #ccc;
+}
+
+span.title {
+  font-weight: bold;
+  font-size: 18pt;
+}
+
+ul {
+  list-style-type: disk;
+}
+
+td {
+  border-color: #ccc;
+  vertical-align: top;
+  padding: 1px;
+}
+
+th {
+  border-color: #ccc;
+  text-align: left;
+  vertical-align: top;
+  padding: 3px;
+}
+code {
+  color: #00008b;
+  font-family: monospace;
+}
+
+a.esf {
+  font-family: monospace;
+}
+
+div.funhist {
+  font-size: x-small;
+  font-style: italic;
+}
+
+div.functitle {
+  font-size : x-large;
+  font-weight: bold;
+  margin-bottom: 1ex;
+}
+
+div.eqn {
+  margin-left: 6mm;
+  margin-top: 2mm;
+  margin-bottom: 2mm;
+}
+
+.optionlist {
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 0ex;
+  border: 1px solid #ccc;
+  border-color: #ccc;
+}
