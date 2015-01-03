@@ -1,0 +1,15 @@
+# Compilation output
+/lib
+/bin
+/lhef/lib
+
+# Computation output
+/out
+/*.root
+/*.pdf
+/*.out
+/*.err
+
+# Input files
+/data
+
